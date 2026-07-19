@@ -8,10 +8,14 @@ def get_command_type(command: list[str]) -> int:
 
     if len(command) == 5:
         match command[1]:
-            case "AND": return 3
-            case "OR": return 4
-            case "LSHIFT": return 5
-            case "RSHIFT": return 6
+            case "AND":
+                return 3
+            case "OR":
+                return 4
+            case "LSHIFT":
+                return 5
+            case "RSHIFT":
+                return 6
 
     return 0
 
