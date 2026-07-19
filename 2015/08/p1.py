@@ -1,11 +1,12 @@
 # Day 8: Matchsticks (Part 1) https://adventofcode.com/2015/day/8
 from re import sub
 
+
 def real_len(string: str) -> int:
     string = string[1:-1]
 
     string = sub(r"\\\\", "_", string)
-    string = sub(r"\\\"", '_', string)
+    string = sub(r"\\\"", "_", string)
     string = sub(r"\\x[0-9a-fA-F]{2}", "_", string)
 
     return len(string)

@@ -1,11 +1,9 @@
 # Day 8: Matchsticks (Part 2) https://adventofcode.com/2015/day/8#part2
-from re import sub
-
 def real_len(string: str) -> int:
 
     string = string.replace("\\", "\\\\")
-    string = string.replace("\"", "\\\"")
-    string = f"\"{string}\""
+    string = string.replace('"', '\\"')
+    string = f'"{string}"'
 
     return len(string)
 
