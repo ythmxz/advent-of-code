@@ -1,4 +1,6 @@
+# Day 9: All in a Single Night (Part 2) https://adventofcode.com/2015/day/9#part2
 from itertools import permutations
+
 
 def find_worst_path(graph: dict, cities: set[str]) -> tuple[tuple[str, ...], float]:
     cities_list: list[str] = list(cities)

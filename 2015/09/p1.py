@@ -1,8 +1,10 @@
+# Day 9: All in a Single Night (Part 1) https://adventofcode.com/2015/day/9
 from itertools import permutations
+
 
 def find_best_path(graph: dict, cities: set[str]) -> tuple[tuple[str, ...], float]:
     cities_list: list[str] = list(cities)
-    best_distance: float = float('inf')
+    best_distance: float = float("inf")
     best_path: tuple[str, ...] = ()
 
     for permutation in permutations(cities_list):
