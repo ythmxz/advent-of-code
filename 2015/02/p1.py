@@ -5,7 +5,7 @@ while True:
     try:
         line: list[str] = input().strip().split("x")
     except EOFError:
-        break;
+        break
 
     l: int = int(line[0])
     w: int = int(line[1])
