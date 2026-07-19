@@ -29,7 +29,7 @@ def has_substrings(string: str) -> bool:
 
 
 VOWELS: list[str] = ["a", "e", "i", "o", "u"]
-SUBSTRINGS: list [str] = ["ab", "cd", "pq", "xy"]
+SUBSTRINGS: list[str] = ["ab", "cd", "pq", "xy"]
 
 nice_strings: int = 0
 

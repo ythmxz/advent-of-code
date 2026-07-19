@@ -1,6 +1,6 @@
 # Day 5: Doesn't He Have Intern-Elves For This? https://adventofcode.com/2015/day/5#part2
 def has_repeating_pair(string: str) -> bool:
-    for i in range(len(string)- 1):
+    for i in range(len(string) - 1):
         if string.count(string[i] + string[i + 1]) >= 2:
             return True
 
