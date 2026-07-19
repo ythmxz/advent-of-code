@@ -1,5 +1,5 @@
+# Day 10: Elves Look, Elves Say (Part 2) https://adventofcode.com/2015/day/10#part2
 from itertools import groupby
-
 
 value: list[int] = [int(x) for x in input().strip()]
 new_value: list[int] = []

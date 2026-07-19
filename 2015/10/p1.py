@@ -1,5 +1,5 @@
+# Day 10: Elves Look, Elves Say (Part 1) https://adventofcode.com/2015/day/10
 from itertools import groupby
-
 
 value: str = input().strip()
 new_value: str = ""
