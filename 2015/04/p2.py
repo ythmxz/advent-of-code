@@ -13,7 +13,7 @@ while md5_hash[:6] != "000000":
     key_suffix = str(suffix_value)
     secret_key: str = key_prefix + key_suffix
 
-    md5_hash: str = md5(secret_key.encode('utf-8')).hexdigest()
+    md5_hash = md5(secret_key.encode("utf-8")).hexdigest()
 
 print(key_suffix)
 print(md5_hash)
